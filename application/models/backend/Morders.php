@@ -1,0 +1,264 @@
+<?php
+class Morders extends CI_Model {
+    public function __construct()
+    {
+        parent::__construct();
+        $this->table = $this->db->dbprefix('order');
+
+    }
+
+    public function orders_listorders($limit, $first)
+    {
+        $this->db->where('trash', 1);
+        $this->db->order_by('orderdate', 'desc');
+        $query = $this->db->get($this->table, $limit, $first);
+        return $query->result_array();
+    }
+    public function orders_count()
+    {
+        $this->db->where('trash', 1);
+        $query = $this->db->get($this->table);
+        return count($query->result_array());
+    }
+
+	public function orders_listorders_byId($limit, $first,$producerId)
+	{
+		$this->db->select('or.*');
+		$this->db->from('db_order or');
+		$this->db->join('db_product b', 'or.productid=b.id', 'left');
+		$this->db->join('db_user u', 'u.id = b.userId', 'left');
+		$this->db->where('u.id',$producerId);
+		$this->db->order_by('or.orderdate','desc');
+		$query = $this->db->get();
+		if($query->num_rows() != 0)
+		{
+			return $query->result_array();
+		}
+		else
+		{
+			return 0;
+		}
+	}
+	public function orders_listorders_byId_count($producerId)
+    {
+		$this->db->select('or.*');
+		$this->db->from('db_order or');
+		$this->db->join('db_product b', 'or.productid = b.id', 'left');
+		$this->db->join('db_user u', 'u.id=b.userId', 'left');
+		$this->db->where('u.id',$producerId);
+		$this->db->order_by('or.orderdate','desc');
+		$query = $this->db->get();
+		if($query->num_rows() != 0)
+		{
+
+			return count($query->result_array());
+		}
+		else
+		{
+			return 0;
+		}
+    }
+
+	public function orders_listorders_byId_count_2($producerId)
+    {
+		$this->db->select('or.*');
+		$this->db->from('db_order or');
+		$this->db->join('db_product b', 'or.productid = b.id', 'left');
+		$this->db->join('db_user u', 'u.id=b.userId', 'left');
+		$this->db->where('u.id',$producerId);
+		$this->db->where('or.status',0);
+		$this->db->order_by('or.orderdate','desc');
+		$query = $this->db->get();
+		if($query->num_rows() != 0)
+		{
+
+			return count($query->result_array());
+		}
+		else
+		{
+			return 0;
+		}
+    }
+
+    public function orders_count_byId($producerId)
+    {
+        $this->db->where('trash', 1);
+        $query = $this->db->get($this->table);
+        return count($query->result_array());
+    }
+
+
+    // chi itet don haang chua luu
+    public function orders_detail($id)
+    {
+        $this->db->where('id',$id);
+        $this->db->where('trash', 1);
+        $query = $this->db->get($this->table);
+        return $query->row_array();
+    }
+    // chi itet don haang da luu
+    public function orders_detail_save($id)
+    {
+        $this->db->where('id',$id);
+        $this->db->where('trash', 0);
+        $query = $this->db->get($this->table);
+        return $query->row_array();
+    }
+
+    public function orders_customerid($customerid)
+    {
+        $this->db->where('customerid',$customerid);
+        $this->db->where('status', 1);
+        $this->db->where('trash', 1);
+        $query = $this->db->get($this->table);
+        return $query->result_array();
+    }
+
+
+
+    public function orders_trash_count()
+    {
+        $this->db->where('trash', 0);
+        $query = $this->db->get($this->table);
+        return count($query->result_array());
+    }
+
+    public function check_status_trash($id)
+    {
+        $this->db->where('id', $id);
+        $this->db->where('status', 1);
+        $query = $this->db->get($this->table);
+        return count($query->result_array());
+    }
+
+    public function orders_update($mydata, $id)
+    {
+        $this->db->where('id',$id);
+        $this->db->update($this->table, $mydata);
+    }
+
+    public function orders_trash($limit, $first)
+    {
+        $this->db->where('trash',0);
+        $query = $this->db->get($this->table, $limit, $first);
+        return $query->result_array();
+    }
+
+    public function orders_delete($id)
+    {
+        $this->db->where('id',$id);
+        $this->db->delete($this->table);
+    }
+
+    public function orders_restore($id)
+    {
+        $data=array('trash'=>1);
+        $this->db->where('id',$id);
+        $this->db->update($this->table, $data);
+    }
+
+    public function order_follow_month($year, $month)
+    {
+        $this->db->where('status', 2);
+        $this->db->where('trash', 1);
+        $this->db->where('YEAR(orderdate)', $year);
+        $this->db->where('MONTH(orderdate)', $month);
+        $query = $this->db->get($this->table);
+        return $query->result_array();
+    }
+
+	public function order_follow_month_byId($year, $month,$producerId)
+	{
+		$this->db->select('or.*');
+		$this->db->from('db_order or');
+		$this->db->join('db_product b', 'or.productid=b.id', 'left');
+		$this->db->join('db_user u', 'u.id = b.userId', 'left');
+		$this->db->where('u.id',$producerId);
+		$this->db->where('or.status', 2);
+        $this->db->where('or.trash', 1);
+        $this->db->where('YEAR(orderdate)', $year);
+        $this->db->where('MONTH(orderdate)', $month);
+		$query = $this->db->get();
+		if($query->num_rows() != 0)
+		{
+			return $query->result_array();
+		}
+		else
+		{
+			return 0;
+		}
+	}
+
+    public function orders_update_number_product($mydata,$id)
+    {
+        $this->db->where('id',$id);
+        $this->db->update('db_product', $mydata);
+    }
+    public function product_number_buy($id)
+    {
+        $this->db->where('id', $id);
+        $this->db->limit(1);
+        $query = $this->db->get('db_product');
+        $row=$query->row_array();
+        return $row['number_buy'];
+    }
+
+    //header tb don hang
+    public function orders_count_header_not()
+    {
+        $this->db->where('status', 0);
+        $this->db->where('trash', 1);
+        $query = $this->db->get($this->table);
+        return count($query->result_array());
+    }
+    public function orders_count_header()
+    {
+        $this->db->where('status', 1);
+        $this->db->where('trash', 1);
+        $query = $this->db->get($this->table);
+        return count($query->result_array());
+    }
+
+	public function orders_count_header_count_not($producerId)
+    {
+		$this->db->select('or.*');
+		$this->db->from('db_order or');
+		$this->db->join('db_product b', 'or.productid = b.id', 'left');
+		$this->db->join('db_user u', 'u.id=b.userId', 'left');
+		$this->db->where('u.id',$producerId);
+		$this->db->where('or.status',1);
+		$this->db->order_by('or.orderdate','desc');
+		$query = $this->db->get();
+		if($query->num_rows() != 0)
+		{
+
+			return count($query->result_array());
+		}
+		else
+		{
+			return 0;
+		}
+    }
+
+	public function orders_listorders_byId_count_not($producerId)
+    {
+		$this->db->select('or.*');
+		$this->db->from('db_order or');
+		$this->db->join('db_product b', 'or.productid = b.id', 'left');
+		$this->db->join('db_user u', 'u.id=b.userId', 'left');
+		$this->db->where('u.id',$producerId);
+		$this->db->where('or.status',0);
+		$this->db->order_by('or.orderdate','desc');
+		$query = $this->db->get();
+		if($query->num_rows() != 0)
+		{
+
+			return count($query->result_array());
+		}
+		else
+		{
+			return 0;
+		}
+    }
+
+}

@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size:14px;
+	color:#333;
+	background-color: #fff!important;
+    font-weight: 400;
+}
+/* Import Fonts
+------------------------------------------------------------ */
+.sort-box-holder{
+    border-bottom: 1px solid #eee;
+}
+.cc-searchtab {
+}
+.cc-senoti{
+    margin-top: 5px;
+    padding-bottom: 10px;
+}
+.cc-searchtab ul li{
+    display: inline-block;
+}
+.cc-searchtab .nav>li{
+    padding: 0 15px 0 0;
+}
+.cc-searchtab ul{
+
+}
+.cc-searchtab .nav-cc>li.active>a,.cc-searchtab .nav-cc>li.active>a:focus,.cc-searchtab .nav-cc>li.active>a:hover {
+    background-color: #fff;
+    border-radius: 0;
+    font-size: 15px;
+    color: #f37021;
+    border-bottom: 2px solid #f37021;
+}
+.cc-searchtab .nav>li>a{
+    padding: 0px 0px 3px
+}
+.cc-searchtab .nav-cc>li>a:focus,.cc-searchtab .nav-cc>li>a:hover {
+    color: #f37021;
+    border-bottom: 2px solid #f37021;
+    background-color: #fff;
+    border-radius: 0;
+}
+
+.cc-secol1{
+}
+.conected-search{
+    margin-top: 10px;
+
+}
+.product-search{
+    margin-top: 15px;
+}
+.cc-secol1 .btn-group.sort-box{
+    padding: 15px 0 0 0;
+    margin-bottom: 20px;
+}
+.block-h1 h1, .block-h3 h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: inline;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.block-h1 h4, .block-h3 h4  {
+    display: inline;
+    font-size: 16px;
+    font-weight: 300;
+    color: #898989;
+}
+.menusearch.cc-searchtab{
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px
+}
+.btn-group.sort-box.cc-searchtab span{
+    margin-right: 15px;
+    float: left;
+}
+.product-search .btn-group.sort-box.cc-searchtab{
+    display: block;
+}
+.sort-list{
+    margin-left: 0px;
+}
+.ncc-rightlist {
+    margin-bottom: 15px;
+    width: 100%;
+}
+.ncc-right-topic{
+    margin-top: 10px;
+}
+.news-center-topic{
+    margin-top: 15px;
+}
+.news-r-tk{
+    margin-top: 20px;
+}
+.w-connected-search{
+    margin-top: 10px;
+
+}
+.fs-sevmore {
+    text-align: center;
+    padding: 20px 0;
+}
+.fs-sevmore a {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 13px;
+    color: #3d3d3d;
+    background-color: #ffffff;
+    border: solid 1px #b2b2b2;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.row.is-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
