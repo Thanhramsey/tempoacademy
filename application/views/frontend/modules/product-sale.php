@@ -10,7 +10,7 @@
                         $html_menu.="<div class = 'spost clearfix'>";
                             $html_menu.="<div class='entry-image'>";
                                 $html_menu.="<a href=".$menu['alias']." title=' ".$menu['name']."'>";
-                                    $html_menu.="<img src='public/images/products/".$menu['img']."'>";
+                                    $html_menu.="<img src='public/images/products/".$menu['avatar']."'>";
                                 $html_menu.="</a>";
                             $html_menu.='</div>';
                             $html_menu.='<div class="entry-c" style="width:194px;">';
