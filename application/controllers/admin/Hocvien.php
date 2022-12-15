@@ -48,15 +48,20 @@ class Hocvien extends CI_Controller {
 		$this->load->library('form_validation');
 		$today=$d['year']."/".$d['mon']."/".$d['mday']." ".$d['hours'].":".$d['minutes'].":".$d['seconds'];
 		$this->form_validation->set_rules('name', 'Học viên', 'required|is_unique[db_hocvien.name]|max_length[25]');
-		// $this->form_validation->set_rules('thoigian', 'Thời gian', 'required');
-		$this->form_validation->set_rules('monId', 'Môn', 'required');
+		$this->form_validation->set_rules('ngaysinh', 'Ngày sinh', 'required');
+		$this->form_validation->set_rules('gioitinh', 'Gioi tinh', 'required');
+		$this->form_validation->set_rules('monId', 'Môn học', 'required');
+		$this->form_validation->set_rules('caId', 'Ca học', 'required');
 		if ($this->form_validation->run() == TRUE)
 		{
 			$mydata= array(
 				'name' =>$_POST['name'],
+				'ngaysinh' =>$_POST['ngaysinh'],
+				'gioitinh' =>$_POST['gioitinh'],
+				'phone' =>$_POST['phone'],
+				'diachi' =>$_POST['diachi'],
 				'monId' =>$_POST['monId'],
-				'startTime' =>$_POST['startTime'],
-				'endTime' =>$_POST['endTime'],
+				'caId' =>$_POST['caId'],
 				'status' =>$_POST['status'],
 				'created_at' =>$today,
 				'trash'=>1
