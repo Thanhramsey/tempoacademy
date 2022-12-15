@@ -17,8 +17,8 @@
 					<input style="width: 60%;" type="text" class="form-control" id="search_text" name="search" placeholder="Nhập từ khóa để tìm kiếm...">
 					<select id ="search_by" style="width: 28%;display: inline-block; margin-left:5px;height:45px" class="form-control" name="option">
 						<option value="0"> Sản phẩm</option>
-						<option value="1" >Doanh nghiệp</option>
-						<option value="2" >Địa phương</option>
+						<!-- <option value="1" >Doanh nghiệp</option> -->
+						<option value="2" >Hãng sản xuất</option>
 					</select>
 					<button style="width: 10%;float: right;">
 						<i class="fa fa-search"></i>

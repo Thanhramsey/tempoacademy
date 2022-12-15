@@ -12,6 +12,16 @@
         </div>
     </div>
 </div>
+<div class="slider">
+        <div class="container">
+           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding:10px !important">
+             <img style="width: 100%; height: 160px; box-shadow: -10px 10px 5px #bbb; border-radius:20px" src="public/images/br-dangky.png">
+        	</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding:10px !important">
+			<img style="width: 100%; height: 160px; box-shadow: -10px 10px 5px #bbb; border-radius:20px" src="public/images/br-dangky.png">
+        	</div>
+    </div>
+</div>
 <div class="container" style="margin-top: 20px;">
     <div class="sale-title">
         <span>SẢN PHẨM KHUYẾN MÃI HOT </span>
@@ -411,7 +421,7 @@
                                     Miễn phí giao hàng
                                 </span>
                                 <span class="small-text">
-                                    Cho hóa đơn từ 1,000,000 đ
+                                    Cho hóa đơn từ 10,000,000 đ
                                 </span>
                             </div>
                         </div>
@@ -438,7 +448,7 @@
                             </div>
                             <div class="description_icon">
                                 <span class="large-text">
-                                    Sản phẩm an toàn
+                                    Sản phẩm chất lượng
                                 </span>
                                 <span class="small-text">
                                     Cam kết chính hãng

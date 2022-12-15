@@ -38,10 +38,10 @@ class Search extends CI_Controller {
 			$this->data['list'] = $this->Muser->doanhnghiep_search($key,$limit,$first);
 			$this->data['search_name']='doanh nghiệp';
 		}else if($option == 2){
-			// timm dia phuong
+			// timm hang sx
 			$total = $this->Mproducer->xa_search_count($key);
 			$this->data['list'] = $this->Mproducer->xa_search($key,$limit,$first);
-			$this->data['search_name']='địa phương';
+			$this->data['search_name']='hãng sản xuất';
 		}
 
 		$this->data['title']='OCOP CHƯPƯH - Bạn muốn tìm gì ?';

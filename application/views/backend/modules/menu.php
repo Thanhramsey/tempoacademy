@@ -23,6 +23,29 @@
 					<i class="glyphicon glyphicon-question-sign"></i> <span>Hỏi đáp</span>
 				</a>
 			</li>
+			<!-- quan ly hoc vu -->
+			<li class="header">QUẢN LÝ HỌC VỤ</li>
+			<li class="treeview">
+				<a href="admin/monhoc">
+					<i class="glyphicon glyphicon-signal"></i> <span>Quản lý môn học</span>
+				</a>
+			</li>
+			<li class="treeview">
+				<a href="admin/cahoc">
+					<i class="glyphicon glyphicon-apple"></i><span>Quản lý ca học</span>
+				</a>
+			</li>
+			<li class="treeview">
+				<a href="admin/hocvien">
+					<i class="glyphicon glyphicon-shopping-cart"></i> <span>Quản lý học vien</span>
+				</a>
+			</li>
+			<li class="treeview">
+				<a href="admin/hoidap">
+					<i class="glyphicon glyphicon-question-sign"></i> <span>Hỏi đáp</span>
+				</a>
+			</li>
+			<!-- quan ly hoc vu -->
 			<?php
 			if ($user['role'] == 1) {
 				echo '<li class="header">QUẢN LÝ DANH MỤC</li>

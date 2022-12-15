@@ -20,8 +20,7 @@
 					<div class="box" id="view">
 						<div class="box-body">
 							<div class="col-md-9">
-								<?php //echo validation_errors();
-								?>
+								<?php //echo validation_errors();?>
 								<div class="form-group">
 									<label>Tên sản phẩm <span class="maudo">(*)</span></label>
 									<input type="text" class="form-control" name="name" style="width:100%" placeholder="Tên sản phẩm">

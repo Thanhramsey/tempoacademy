@@ -166,6 +166,41 @@ $route['admin/contact/detail/(:num)'] ='admin/contact/detail/$1';
 $route['admin/contact/(:num)'] ='admin/contact/index/$1';
 $route['admin/contact/recyclebin/(:num)'] ='admin/contact/recyclebin';
 
+//mon hoc
+$route['admin/monhoc'] ='admin/monhoc';
+$route['admin/monhoc/(:num)'] ='admin/monhoc/index/$1';
+$route['monhoc/insert'] ='monhoc/insert';
+$route['monhoc/update/(:num)'] ='monhoc/update/$1';
+$route['monhoc/status/(:num)'] ='monhoc/status/$1';
+$route['monhoc/recyclebin'] ='monhoc/recyclebin';
+$route['monhoc/recyclebin/(:num)'] ='monhoc/recyclebin/$1';
+$route['monhoc/trash/(:num)'] ='monhoc/trash/$1';
+$route['monhoc/delete/(:num)'] ='monhoc/delete/$1';
+$route['monhoc/restore/(:num)'] ='monhoc/restore/$1';
+//ca hoc
+$route['admin/cahoc'] ='admin/cahoc';
+$route['admin/cahoc/(:num)'] ='admin/cahoc/index/$1';
+$route['cahoc/insert'] ='cahoc/insert';
+$route['cahoc/update/(:num)'] ='cahoc/update/$1';
+$route['cahoc/status/(:num)'] ='cahoc/status/$1';
+$route['cahoc/recyclebin'] ='cahoc/recyclebin';
+$route['cahoc/recyclebin/(:num)'] ='cahoc/recyclebin/$1';
+$route['cahoc/trash/(:num)'] ='cahoc/trash/$1';
+$route['cahoc/delete/(:num)'] ='cahoc/delete/$1';
+$route['cahoc/restore/(:num)'] ='cahoc/restore/$1';
+//hoc vien
+$route['admin/hocvien'] ='admin/hocvien';
+$route['admin/hocvien/(:num)'] ='admin/hocvien/index/$1';
+$route['hocvien/insert'] ='hocvien/insert';
+$route['hocvien/update/(:num)'] ='hocvien/update/$1';
+$route['hocvien/status/(:num)'] ='hocvien/status/$1';
+$route['hocvien/recyclebin'] ='hocvien/recyclebin';
+$route['hocvien/recyclebin/(:num)'] ='hocvien/recyclebin/$1';
+$route['hocvien/trash/(:num)'] ='hocvien/trash/$1';
+$route['hocvien/delete/(:num)'] ='hocvien/delete/$1';
+$route['hocvien/restore/(:num)'] ='hocvien/restore/$1';
+
+
 $route['admin/(:any)']='admin/E403/index';
 $route['admin/403']='admin/E403/index';
 $route['404_override'] = 'Error404';
@@ -176,10 +211,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['diaphuong/detail/(:any)'] = 'diaphuong/detail/$1';
 
-
-
 //facebook
-
 $route['fb-callback'] = 'dangnhap/fbcallback';
-
 $route['fb-index'] = 'dangnhap/fbindex';
+

@@ -84,7 +84,8 @@
 				?>
 			</ul>
 		</li>
-		<li class="pull-left"><a href="ketnoicungcau">Kết nối cung cầu</a></li>
+		<li class="pull-left"><a href="ketnoicungcau">Lịch học</a></li>
+		<!-- <li class="pull-left"><a href="ketnoicungcau">Kết nối cung cầu</a></li> -->
 		<li class="pull-left"><a href="san-pham">Sản phẩm</a></li>
 		<li class="pull-left"><a href="tin-tuc/1">Tin tức</a></li>
 		<li class="pull-left"><a href="van-ban">Chính Sách</a></li>
