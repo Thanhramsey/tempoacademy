@@ -45,7 +45,7 @@
 				<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
 					<div class="card-body">
 						<p>Quý hoàn toàn có quyền yêu cầu kiểm tra sản phẩm. Chỉ sau khi xác nhận đã nhận đủ sản phẩm, phụ kiện, và sản phẩm không hư hỏng, gãy vỡ, va đập thì bạn mới phải thanh toán đơn hàng.</p>
-						<p>Nếu sản phẩm không đúng mô tả, thiếu phụ kiện đi kèm, hư hỏng, gãy vỡ,... vui lòng liên hệ đến hotline (0269) 3 850 009 để phản hồi với chúng tôi.</p>
+						<p>Nếu sản phẩm không đúng mô tả, thiếu phụ kiện đi kèm, hư hỏng, gãy vỡ,... vui lòng liên hệ đến hotline 0979.190.303 - 0349.303.368 để phản hồi với chúng tôi.</p>
 					</div>
 				</div>
 			</div>
@@ -59,7 +59,7 @@
 				</div>
 				<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
 					<div class="card-body">
-						<p>Để hủy đơn hàng, bạn có thể vào phần Tài Khoản -> chọn hủy đơn hàng để hủy đơn hàng, hoặc bạn có thể gọi trực tiếp số hotline (0269) 3 850 009 để được hủy đơn hàng.</p>
+						<p>Để hủy đơn hàng, bạn có thể vào phần Tài Khoản -> chọn hủy đơn hàng để hủy đơn hàng, hoặc bạn có thể gọi trực tiếp số hotline 0979.190.303 - 0349.303.368 để được hủy đơn hàng.</p>
 					</div>
 				</div>
 			</div>

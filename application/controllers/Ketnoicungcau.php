@@ -23,7 +23,7 @@ class Ketnoicungcau extends CI_Controller {
 		$this->data['strphantrang']=$this->phantrang->PagePer($total, $current, $limit, $url='ketnoicungcau');
 		$this->data['list']=$this->Mketnoicungcau->cungcau_all($limit,$first);
 		$this->data['listShop']=$this->Muser->users_banhang_five();
-		$this->data['title']="OCOP CHƯPƯH - Liên hệ";
+		$this->data['title']="TEMPO  - Liên hệ";
 		$this->data['view']='index';
 		$this->load->view('frontend/layout',$this->data);
 	}
@@ -40,7 +40,7 @@ class Ketnoicungcau extends CI_Controller {
 		$this->data['strphantrang']=$this->phantrang->PagePer($total, $current, $limit, $url='ketnoicungcau');
 		$this->data['list']=$this->Mketnoicungcau->cungcau_list($limit,$first,$type);
 		$this->data['listShop']=$this->Muser->users_banhang_five();
-		$this->data['title']="OCOP CHƯPƯH - Liên hệ";
+		$this->data['title']="TEMPO  - Liên hệ";
 		$this->data['view']='index';
 		$this->load->view('frontend/layout',$this->data);
 	}
@@ -57,7 +57,7 @@ class Ketnoicungcau extends CI_Controller {
 		$this->data['strphantrang']=$this->phantrang->PagePer($total, $current, $limit, $url='ketnoicungcau');
 		$this->data['list']=$this->Mketnoicungcau->cungcau_list($limit,$first,$type);
 		$this->data['listShop']=$this->Muser->users_banhang_five();
-		$this->data['title']="OCOP CHƯPƯH - Liên hệ";
+		$this->data['title']="TEMPO  - Liên hệ";
 		$this->data['view']='index';
 		$this->load->view('frontend/layout',$this->data);
 	}
@@ -73,7 +73,7 @@ class Ketnoicungcau extends CI_Controller {
 		$this->data['strphantrang']=$this->phantrang->PagePer($total, $current, $limit, $url='ketnoicungcau');
 		$this->data['list']=$this->Mketnoicungcau->cungcau_list($limit,$first,$type);
 		$this->data['listShop']=$this->Muser->users_banhang_five();
-		$this->data['title']="OCOP CHƯPƯH - Liên hệ";
+		$this->data['title']="TEMPO  - Liên hệ";
 		$this->data['view']='index';
 		$this->load->view('frontend/layout',$this->data);
 	}
@@ -172,7 +172,7 @@ class Ketnoicungcau extends CI_Controller {
 		$this->data['strphantrang']=$this->phantrang->PagePer($total, $current, $limit, $url='ketnoicungcau');
 		$this->data['list']=$this->Mketnoicungcau->cungcau_timkiem($limit,$first,$loaicungcau,$loaisp,$keyword);
 		$this->data['listShop']=$this->Muser->users_banhang_five();
-		$this->data['title']="OCOP CHƯPƯH - Liên hệ";
+		$this->data['title']="TEMPO  - Liên hệ";
 		$this->data['view']='index';
 		$this->load->view('frontend/layout',$this->data);
 	}

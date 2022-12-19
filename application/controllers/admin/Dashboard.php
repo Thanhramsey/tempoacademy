@@ -43,7 +43,7 @@ class Dashboard extends CI_Controller {
 		//Thống kê - vẽ biểu đồ
 
 		$this->data['view']='index';
-		$this->data['title']='Hệ thống quản lý OCCP- CHƯPƯH';
+		$this->data['title']='Hệ thống quản lý OCCP- ';
 		$this->load->view('backend/layout', $this->data);
 	}
 

@@ -25,7 +25,7 @@ class Vanban extends CI_Controller {
 		$total=$this->Mchinhsach->chinhsach_count();
 		$this->data['strphantrang']=$this->phantrang->PagePer($total, $current, $limit, $url='van-ban');
 		$this->data['list']=$this->Mchinhsach->chinhsach_all($limit,$first);
-		$this->data['title']="OCOP CHƯPƯH - Liên hệ";
+		$this->data['title']="TEMPO  - Liên hệ";
 		$this->data['view']='index';
 		$this->load->view('frontend/layout',$this->data);
 	}

@@ -29,7 +29,7 @@
 									<label>Năm sinh <span class="maudo">(*)</span></label>
 									<input type="text" class="form-control" name="ngaysinh" style="width:70%" placeholder="Năm sinh">
 									<div class="error" id="password_error"><?php echo form_error('ngaysinh') ?></div>
-								</div>								
+								</div>
 								<div class="form-group">
 									<label>Địa chỉ<span class="maudo">(*)</span></label>
 									<input type="text" class="form-control" name="diachi" style="width:70%" placeholder="Địa chỉ">
@@ -74,8 +74,8 @@
 									<label>Trạng thái</label>
 									<select name="status" class="form-control" style="width:70%">
 										<option value="">[--Chọn trạng thái--]</option>
-										<option value="1">Đang hoạt động</option>
-										<option value="0">Ngưng hoạt động</option>
+										<option value="1">Hoạt động</option>
+										<option value="0">Chưa hoạt động</option>
 									</select>
 								</div>
 							</div>

@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Hệ thống quản lý OCCP- CHƯPƯH</title>
+        <title>Hệ thống quản lý OCCP- </title>
         <link rel="shortcut icon" href="public/images/templates/favicon.png" />
 		<link rel="stylesheet" href="public/css/bootstrap.css">
 		<link rel="stylesheet" href="public/css/login.css">
@@ -54,7 +54,7 @@
     </div>
         <nav class="navbar navbar-fixed-bottom" role="navigation">
             <div class="container">
-               <h5 class="text-center">Copyright © 2022 <a href="#" style="color:red">COOP CHƯPƯH</a>. All rights reserved.</h5>
+               <h5 class="text-center">Copyright © 2022 <a href="#" style="color:red">COOP </a>. All rights reserved.</h5>
             </div>
         </nav>
 

@@ -40,7 +40,7 @@ class Sanpham extends CI_Controller {
         $total=$this->Mproduct->product_sanpham_count("","");
         $this->data['strphantrang']=$this->phantrang->PagePer($total, $current, $limit, $url='san-pham');
         $this->data['list']=$this->Mproduct->product_sanpham($limit,$first,$f,$od);
-        $this->data['title']='OCOP CHƯPƯH - Tất cả sản phẩm';
+        $this->data['title']='TEMPO  - Tất cả sản phẩm';
         $this->data['view']='index';
         if(isset($_POST['sapxep'])){
             $result=$this->load->view('frontend/components/sanpham/index_order',$this->data,true);
@@ -85,7 +85,7 @@ class Sanpham extends CI_Controller {
         $total=$this->Mproduct->product_chude_count($listcat);
         $this->data['strphantrang']=$this->phantrang->PagePer($total, $current, $limit, $url='san-pham/'.$link);
         $this->data['list']=$this->Mproduct->product_list_cat_limit($listcat, $limit,$first,$f,$od);
-        $this->data['title']='OCOP CHƯPƯH - Sản phẩm theo từng danh mục';
+        $this->data['title']='TEMPO  - Sản phẩm theo từng danh mục';
         $this->data['view']='category';
         if(isset($_POST['sapxep-category'])){
 			$result=$this->load->view('frontend/components/sanpham/index_order',$this->data,true);
@@ -134,7 +134,7 @@ class Sanpham extends CI_Controller {
         $total=$this->Mproduct->product_diban_count($listcat);
         $this->data['strphantrang']=$this->phantrang->PagePer($total, $current, $limit, $url='san-pham/db/'.$link);
         $this->data['list']=$this->Mproduct->product_list_diaban_limit($listcat, $limit,$first,$f,$od);
-        $this->data['title']='OCOP CHƯPƯH - Sản phẩm theo từng danh mục';
+        $this->data['title']='TEMPO  - Sản phẩm theo từng danh mục';
         $this->data['view']='diaban';
         if(isset($_POST['sapxep-category'])){
 
@@ -185,7 +185,7 @@ class Sanpham extends CI_Controller {
 		}else{
 			$AverageRating = 4;
 		}
-		$this->data['title']='OCOP CHƯPƯH - '.$row['name'];
+		$this->data['title']='TEMPO  - '.$row['name'];
 		$this->data['view']='detail';
 		$this->data['star1']=$star1;
 		$this->data['star2']=$star2;

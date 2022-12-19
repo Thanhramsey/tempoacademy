@@ -84,7 +84,7 @@
 				?>
 			</ul>
 		</li>
-		<li class="pull-left"><a href="ketnoicungcau">Lịch học</a></li>
+		<li class="pull-left"><a href="lichhoc">Lịch học</a></li>
 		<!-- <li class="pull-left"><a href="ketnoicungcau">Kết nối cung cầu</a></li> -->
 		<li class="pull-left"><a href="san-pham">Sản phẩm</a></li>
 		<li class="pull-left"><a href="tin-tuc/1">Tin tức</a></li>
@@ -94,7 +94,7 @@
 			<ul class="dropdown-menu">
 				<li class="sub-link"><a href="lien-he">Liên hệ</a></li>
 				<li class="sub-link"><a href="chinhsachbaomat">Chính sách bảo mật</a></li>
-				<li class="sub-link"><a href="dieukhoanthamgia">Điều khoản tham gia</a></li>
+				<li class="sub-link"><a href="dieukhoanbaohanh">Điều khoản bảo hành</a></li>
 				<li class="sub-link"><a href="questions">Câu hỏi thường gặp</a></li>
 			</ul>
 		</li>

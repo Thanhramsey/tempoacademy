@@ -19,7 +19,7 @@ class Trangchu extends CI_Controller {
 	public function index()
 	{
 		$this->data['option']= 0;
-        $this->data['title']='OCOP CHƯPƯH';
+        $this->data['title']='TEMPO';
         $this->data['view']='index';
 		$this->load->view('frontend/layout',$this->data);
 	}

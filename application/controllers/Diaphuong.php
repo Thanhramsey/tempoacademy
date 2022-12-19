@@ -21,7 +21,7 @@ class Diaphuong extends CI_Controller {
 		$this->data['row']=$row;
 		$this->data['total']=$total;
 		$this->data['sp']=$sp;
-        $this->data['title']='OCOP CHƯPƯH - Giới thiệu';
+        $this->data['title']='TEMPO  - Giới thiệu';
         $this->data['view']='detail';
 		$this->load->view('frontend/layout',$this->data);
 	}

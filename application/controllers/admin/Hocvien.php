@@ -26,12 +26,16 @@ class Hocvien extends CI_Controller {
 		$current=$this->phantrang->PageCurrent();
 		$first=$this->phantrang->PageFirst($limit, $current);
 		$loaisp = "";
+		$caId = "";
 		if(!empty($_POST['loaisp'])){
 			$loaisp = $_POST['loaisp'];
 		}
-		$total=$this->Mhocvien->hocvien_count($loaisp);
+		if(!empty($_POST['caId'])){
+			$caId = $_POST['caId'];
+		}
+		$total=$this->Mhocvien->hocvien_count($loaisp,$caId);
 		$this->data['strphantrang']=$this->phantrang->PagePer($total, $current, $limit, $url='admin/hocvien');
-		$this->data['list']=$this->Mhocvien->hocvien_all($limit,$first,$loaisp);
+		$this->data['list']=$this->Mhocvien->hocvien_all($limit,$first,$loaisp,$caId);
 		$this->data['view']='index';
 		$this->data['title']='Học viên';
 		$this->load->view('backend/layout', $this->data);
@@ -66,6 +70,26 @@ class Hocvien extends CI_Controller {
 				'created_at' =>$today,
 				'trash'=>1
 			);
+			$mydata['cahocId']= 0 ;
+			if (!empty($_POST['cahocId'])) {
+				$mydata['cahocId']=$_POST['cahocId'];
+			}
+			$config['upload_path']          = './public/images/hocvien/';
+			$config['encrypt_name'] = TRUE;
+            $config['allowed_types']        = 'gif|jpg|png';
+            $config['max_size']             = 2000;
+            $this->load->library('upload', $config);
+            if ( $this->upload->do_upload('img')){
+                $data = $this->upload->data();
+                $mydata['img']=$data['file_name'];
+            }else{
+				if (!empty($_POST['gioitinh']) && $_POST['gioitinh'] == 0) {
+					$mydata['img']='2.png';
+				}
+                else{
+					$mydata['img']='1.png';
+				}
+            }
 			$this->Mhocvien->hocvien_insert($mydata);
 			$this->session->set_flashdata('success', 'Thêm danh mục thành công');
 			redirect('admin/hocvien','refresh');

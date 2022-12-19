@@ -2,7 +2,7 @@
 <body>
 	<div style="color: #262144;">
 		<p>Xin chào <?php echo $customer['fullname']?>,</p>
-		<p>Cảm ơn Quý khách đã đặt hàng tại <strong>OCOP CHUPUH</strong>!</p>
+		<p>Cảm ơn Quý khách đã đặt hàng tại <strong>TEMPO CHUPUH</strong>!</p>
 		<p>Đơn hàng của Quý khách đã được tiếp nhận, chúng tôi sẽ nhanh chóng liên hệ với Quý khách.</p>
 		<div>
 			<div style="font-size:18px;padding-top:10px"><strong>Thông tin Khách hàng</strong></div>

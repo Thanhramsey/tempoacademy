@@ -39,7 +39,7 @@ class Dangnhap extends CI_Controller {
                 $this->load->view('frontend/layout',$this->data);
             }
         }else{
-            $this->data['title']='OCOP - Đăng nhập tài khoản';
+            $this->data['title']='TEMPO - Đăng nhập tài khoản';
             $this->data['view']='dangnhap';
             $this->load->view('frontend/layout',$this->data);
         }
@@ -142,7 +142,7 @@ class Dangnhap extends CI_Controller {
             $this->data['success']='Đăng ký thành công! Bạn đã nhận được 1 mã giảm giá cho thành viên mới, vui lòng kiểm tra email !!';
 
         }
-        $this->data['title']='OCOP CHƯPƯH - Đăng ký tài khoản';
+        $this->data['title']='TEMPO  - Đăng ký tài khoản';
         $this->data['view']='dangky';
         $this->load->view('frontend/layout',$this->data);
     }

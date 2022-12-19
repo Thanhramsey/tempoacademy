@@ -33,16 +33,16 @@
 						<li class="nav-item">
 							<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Sản Phẩm</a>
 						</li>
-						<li class="nav-item active">
+						<!-- <li class="nav-item active">
 							<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Địa điểm</a>
-						</li>
+						</li> -->
 					</ul>
 					<div class="tab-content" id="pills-tabContent">
 						<div class="tab-pane detail-dn products-grid clearfix" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"><span><?php echo $row['detail'] ?></span></div>
 						<div class="tab-pane detail-dn products-grid clearfix" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
 
 										<?php if ($total == 0) : ?>
-											<p class="no-products"> Địa phương hiện chưa có sản phẩm nào !</p>
+											<p class="no-products">Hiện chưa có sản phẩm nào !</p>
 										<?php else : ?>
 											<?php foreach ($sp as $sp) : ?>
 												<div class="col-md-4 col-lg-4 col-xs-6 col-6 detail-box">

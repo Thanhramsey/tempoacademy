@@ -44,7 +44,7 @@ class Search extends CI_Controller {
 			$this->data['search_name']='hãng sản xuất';
 		}
 
-		$this->data['title']='OCOP CHƯPƯH - Bạn muốn tìm gì ?';
+		$this->data['title']='TEMPO  - Bạn muốn tìm gì ?';
 		$this->data['option'] =$option;
 		$this->data['strphantrang']=$this->phantrangsearch->PagePer($total, $current, $limit, $url= 'search',$sufix= $sufix );
 		$this->data['view']='index';

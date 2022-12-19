@@ -40,18 +40,8 @@
 				</div>
 				<div class="col-md-4">
 					<div class="form-group">
-						<label>Môn</label>
+						<label>Ca</label>
 						<select name="caId" id="caId" class="form-control">
-							<!-- <option value="">[--Chọn ca--]
-								<?php
-								$cahoc_list = $this->Mcahoc->cahoc_list();
-								$option_parentid = "";
-								foreach ($cahoc_list as $r) {
-									$option_parentid .= "<option value='" . $r['id'] . "'>" . $r['name'] . "</option>";
-								}
-								echo $option_parentid;
-								?>
-							</option> -->
 						</select>
 					</div>
 				</div>
@@ -97,6 +87,7 @@
 											<th class="text-center">SĐT</th>
 											<th class="text-center">Môn học</th>
 											<th class="text-center">Ca học</th>
+											<th class="text-center">Trạng thái</th>
 											<th class="text-center" colspan="2">Thao tác</th>
 										</tr>
 									</thead>
@@ -113,8 +104,12 @@
 													echo $monhoc['name'];
 												?></td>
 												<td class="text-center"><?php
-													$cahoc = $this->Mcahoc->cahoc_detail($row['cahocId']);
-													echo $cahoc['name'];
+													if ($row['cahocId'] != 0){
+														$cahoc = $this->Mcahoc->cahoc_detail($row['cahocId']);
+														echo $cahoc['name'];
+													}else{
+														echo "Chưa xếp ca";
+													}
 												?></td>
 												<td class="text-center">
 													<a href="<?php echo base_url() ?>admin/hocvien/status/<?php echo $row['id'] ?>">

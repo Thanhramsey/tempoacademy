@@ -12,9 +12,9 @@
 	<title>
 		<?php
 		if (isset($title))
-			echo "OCOP-Chư Pưh Chương trình mỗi xã một sản phẩm";
+			echo "TEMPO - Cung cấp nhạc cụ và đào tạo các môn nghệ thuật.";
 		else
-			echo "OCOP-Chư Pưh Chương trình mỗi xã một sản phẩm";
+			echo "TEMPO - Cung cấp nhạc cụ và đào tạo các môn nghệ thuật.";
 		?>
 	</title>
 	<link rel="icon" type="image/x-icon" href="public/images/favicon.png">
@@ -23,13 +23,11 @@
 	<link href="public/css/lte.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 	<link href="public/css/owl.carousel.min.css" rel="stylesheet">
-	<!-- <link href="public/css/AdminLTE.css" rel="stylesheet"> -->
 	<link rel="stylesheet" href="public/css/style-jc.css">
 	<link href="public/css/menu-tab.css" rel="stylesheet">
 	<link href="public/css/style.css" rel="stylesheet">
 	<link href="public/css/ketnoi.css" rel="stylesheet">
 	<link href="public/css/ketquatimkiem.css" rel="stylesheet">
-	<!-- <link href="public/css/jquery.bxslider.css" rel="stylesheet"> -->
 	<link href="public/css/flexslider.css" rel="stylesheet">
 	<script src="public/js/jquery-2.2.3.min.js"></script>
 </head>
@@ -128,7 +126,7 @@
 		<div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
 	</div>
 	<div class='scrolltop icon'>
-		<a class='facebook' target="_blank" href="https://www.facebook.com/ChuPuhDistrict">
+		<a class='facebook' target="_blank" href="https://www.facebook.com/tempogialai">
 			<i style="color:#fff" class="fab fa-2x fa-facebook-f"></i>
 		</a>
 	</div>

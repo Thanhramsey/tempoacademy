@@ -34,10 +34,12 @@ $route['account/orders/update/(:num)'] = 'thongtin/update/(:num)';
 $route['reset_password'] = 'thongtin/reset_password';
 $route['van-ban'] = 'vanban/index';
 $route['questions'] = 'lienhe/questions';
-$route['dieukhoanthamgia'] = 'lienhe/dieukhoanthamgia';
+$route['dieukhoanbaohanh'] = 'lienhe/dieukhoanthamgia';
 $route['chinhsachbaomat'] = 'lienhe/chinhsachbaomat';
 $route['ketnoicungcau'] = 'ketnoicungcau/index';
 $route['ketnoicungcau/timkiem'] = 'ketnoicungcau/timkiem';
+
+$route['lichhoc'] = 'lichhoc/index';
 
 $route['admin'] = 'admin/dashboard';
 

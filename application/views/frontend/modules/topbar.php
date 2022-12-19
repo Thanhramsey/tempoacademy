@@ -5,7 +5,7 @@
 			<div class="col-md-12 col-lg-12">
 				<div class="navbar-header">
 					<!-- <div class="icon-img-logo hidden-md hidden-lg">
-						<strong><p style="color:#fff">OCOP CHƯPƯH</p></strong>
+						<strong><p style="color:#fff">TEMPO </p></strong>
                     </div> -->
 					<button style="padding-left:10px !important" type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 						<span class="icon-bar"></span>
@@ -44,7 +44,7 @@
                 		?>
                 	</ul>
                 	<ul class="nav navbar navbar-nav pull-right" id="nav2">
-					<li><a class='logi' style='color:#fff' href='#'><i style='margin-right:6px' class='glyphicon glyphicon-earphone'></i>Hot line:  (0269) 3 850 009</a></li>
+					<li><a class='logi' style='color:#fff' href='#'><i style='margin-right:6px' class='glyphicon glyphicon-earphone'></i>Hot line:  0979.190.303 - 0349.303.368</a></li>
                 		<?php
                 		if($this->session->userdata('sessionKhachHang')){
                 			$name=$this->session->userdata('sessionKhachHang_name');

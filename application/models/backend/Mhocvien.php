@@ -8,23 +8,29 @@ class Mhocvien extends CI_Model {
 		$this->table = $this->db->dbprefix('hocvien');
 	}
 	// Lấy lên danh sách danh mục
-	public function hocvien_all($limit,$first,$loaisp)
+	public function hocvien_all($limit,$first,$loaisp, $cahoc)
 	{
 		$this->db->where('trash',1);
 		if($loaisp != ""){
 			$this->db->where('monId', $loaisp);
+		}
+		if($cahoc != ""){
+			$this->db->where('cahocId', $cahoc);
 		}
 		$this->db->order_by('id', 'asc');
 		$query = $this->db->get($this->table,$limit,$first);
         return $query->result_array();
 	}
 	// Đếm phân trang
-	public function hocvien_count($loaisp)
+	public function hocvien_count($loaisp, $cahoc)
 	{
 		$this->db->where('status', 1);
         $this->db->where('trash', 1);
 		if($loaisp != ""){
 			$this->db->where('monId', $loaisp);
+		}
+		if($cahoc != ""){
+			$this->db->where('cahocId', $cahoc);
 		}
         $query = $this->db->get($this->table);
         return count($query->result_array());
