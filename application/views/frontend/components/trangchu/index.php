@@ -16,13 +16,13 @@
         <div class="container">
            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding:10px !important">
 		   <a href="tin-tuc/thong-bao-khai-truong-trung-tam">
-             <img style="width: 100%; height: 160px; box-shadow: -10px 10px 5px #bbb; border-radius:20px" src="public/images/quangcao/khaitruong.png">
+             <img style="width: 100%; height: 160px; box-shadow: -10px 10px 5px #bbb; border-radius:20px" src="public/images/quangcao/khaitruong.jpg">
         	</div>
 			</a>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding:10px !important">
 
 			<a href="san-pham">
-				<img style="width: 100%; height: 160px; box-shadow: -10px 10px 5px #bbb; border-radius:20px" src="public/images/quangcao/khaitruong2.png">
+				<img style="width: 100%; height: 160px; box-shadow: -10px 10px 5px #bbb; border-radius:20px" src="public/images/quangcao/khaitruong2.jpg">
 			</a>
         	</div>
     </div>
