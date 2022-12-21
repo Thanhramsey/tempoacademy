@@ -1,4 +1,5 @@
 <?php
+ob_start();
 defined('BASEPATH') OR exit('No direct script access allowed');
 class Dangnhap extends CI_Controller {
 	// Hàm khởi tạo
@@ -245,4 +246,12 @@ class Dangnhap extends CI_Controller {
     $this->load->view('frontend/layout',$this->data);
 }
 
+public function fbcallback()
+	{
+		$this->data['title']="TEMPO  - Liên hệ";
+		$this->data['view']='fbcallback';
+		$this->load->view('frontend/layout',$this->data);
+	}
 }
+
+?>

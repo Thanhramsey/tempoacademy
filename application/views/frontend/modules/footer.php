@@ -65,22 +65,9 @@
 				</div>
 				<!--  -->
 				<div class="col-xs-12 col-sm-4">
-					<!-- <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=200&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="340" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe> -->
-						<iframe target="_top" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftempogialai%2Fposts%2F498250948992792&show_text=false&width=500" width="340" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+					<a href="https://www.facebook.com/tempogialai"><img style="border-radius:5px" src="public/images/banners/slider-1.png" class="img-responsive"></a>
 				</div>
 			</div>
-			<!-- <div class="col-xs-12 col-sm-12 col-md-6">
-				<div class="col-xs-12 col-sm-6">
-					<h3 class="footer-title">HỖ TRỢ KHÁCH HÀNG</h3>
-					<ul class="list-unstyled linklists">
-						<li><a href="#">Hướng dẫn thanh toán</a></li>
-						<li><a href="#">Hướng dẫn đặt hàng</a></li>
-						<li><a href="#">Điều khoản</a></li>
-					</ul>
-				</div>
-				<div class="col-xs-12 col-sm-6">
-						<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D310344917757170%26set%3Da.188153439976319%26type%3D3&width=350&show_text=true&height=233&appId" width="350" height="233" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-				</div>-->
 		</div>
 	</div>
 	</div>

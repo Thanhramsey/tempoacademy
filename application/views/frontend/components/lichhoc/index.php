@@ -106,7 +106,7 @@ $user = $this->session->userdata('sessionKhachHang');
 <!--Cung cầu modal  -->
 <script type="text/javascript">
 	function loadCahoc() {
-		var strurl = "<?php echo base_url(); ?>" + '/admin/cahoc/listCaHoc/' + $("#loaisp").val();
+		var strurl = "<?php echo base_url(); ?>" + '/lichhoc/listCaHoc/' + $("#loaisp").val();
 		jQuery.ajax({
 			url: strurl,
 			type: 'GET',

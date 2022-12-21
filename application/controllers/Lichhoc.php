@@ -39,6 +39,16 @@ class Lichhoc extends CI_Controller {
 		$this->load->view('frontend/layout',$this->data);
 	}
 
+	public function listCaHoc($monId)
+	{
+		$cahoc_list=$this->Mcahoc->cahoc_theomon($monId);
+		$option_parentid = "";
+		foreach ($cahoc_list as $r) {
+			$option_parentid .= "<option value='" . $r['id'] . "'>" . $r['name'] . "</option>";
+		}
+		print json_encode(array("status"=>"success","message"=> $option_parentid));
+	}
+
 	public function cung(){
 		$this->load->library('phantrang');
 		$limit=10;

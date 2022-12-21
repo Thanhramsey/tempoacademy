@@ -14,4 +14,10 @@
 	config.filebrowserUploadUrl = 'http://localhost:8080/tempoacademy/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files';
 	config.filebrowserImageUploadUrl = 'http://localhost:8080/tempoacademy/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images';
 	config.filebrowserFlashUploadUrl = 'http://localhost:8080/tempoacademy/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash';
+	// config.filebrowserBrowseUrl = 'https://tempocenter.000webhostapp.com/public/ckfinder/ckfinder.html';
+	// config.filebrowserImageBrowseUrl = 'https://tempocenter.000webhostapp.com/public/ckfinder/ckfinder.html?type=Images';
+	// config.filebrowserFlashBrowseUrl = 'https://tempocenter.000webhostapp.com/public/ckfinder/ckfinder.html?type=Flash';
+	// config.filebrowserUploadUrl = 'https://tempocenter.000webhostapp.com/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files';
+	// config.filebrowserImageUploadUrl = 'https://tempocenter.000webhostapp.com/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images';
+	// config.filebrowserFlashUploadUrl = 'https://tempocenter.000webhostapp.com/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash';
 };
