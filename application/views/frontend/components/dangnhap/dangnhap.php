@@ -28,6 +28,9 @@
 								<?php
 									$this->load->view('frontend/components/dangnhap/fbbtn');
 								?>
+								<?php
+									$this->load->view('frontend/components/dangnhap/redirect-google');
+								?>
 								<ul class="pull-right">
 									<li><a href="quen-mat-khau" class="fright">Quên mật khẩu?</a></li>
 									<li><a href="<?php echo base_url() ?>dang-ky" class="fright">Người dùng mới? Đăng ký tài khoản</a></li>

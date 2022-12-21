@@ -215,5 +215,6 @@ $route['diaphuong/detail/(:any)'] = 'diaphuong/detail/$1';
 
 //facebook
 $route['fbcallback'] = 'dangnhap/fbcallback';
+$route['ggcallback'] = 'dangnhap/ggcallback';
 $route['fb-index'] = 'dangnhap/fbindex';
 

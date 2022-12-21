@@ -252,6 +252,13 @@ public function fbcallback()
 		$this->data['view']='fbcallback';
 		$this->load->view('frontend/layout',$this->data);
 	}
+
+	public function ggcallback()
+	{
+		$this->data['title']="TEMPO  - Liên hệ";
+		$this->data['view']='redirect-google';
+		$this->load->view('frontend/layout',$this->data);
+	}
 }
 
 ?>
