@@ -16,7 +16,7 @@
     /**
      * CALL GOOGLE API
      */
-    require_once 'google/vendor/autoload.php';
+    require_once 'google-api-php-client-2.4.0/google/vendor/autoload.php';
     $client = new Google_Client();
     $client->setClientId('657412202004-iih5ap2dkvtmsfa0osi4hicnkd82le5c.apps.googleusercontent.com');
     $client->setClientSecret('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');
@@ -70,5 +70,5 @@
          * IF YOU DON'T LOGIN GOOGLE
          * YOU CAN SEEN AGAIN GOOGLE_APP_ID, GOOGLE_APP_SECRET, GOOGLE_APP_CALLBACK_URL
          */
-        echo "<a class='button button-3d button-black nomargin pull-left cursorsHover' style='background-color:#337ab7 !important' href='".$client->createAuthUrl()."' >Google Login</a>";
+        echo "<a class='button button-3d button-black nomargin pull-left cursorsHover' style='background-color:#e32f2f !important' href='".$client->createAuthUrl()."' ><i class='fab fa-google-plus'></i>Google Login</a>";
     }
