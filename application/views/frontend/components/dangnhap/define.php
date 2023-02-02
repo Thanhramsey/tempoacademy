@@ -6,5 +6,5 @@
     define('LOCALHOST','localhost');
     define('USERNAME','root');
     define('PASSWORD','');
-    define('DATABASE','ABC');
+    define('DATABASE','newtempo');
 ?>
